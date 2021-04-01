@@ -4,9 +4,12 @@
 <html lang="ru"> <!-- в "lang" задаётся язык документа -- >
 <head> <!-- Хранит служебную информацию страницы -->
   <meta charset="UTF-8"> <!-- Метаинформация кодировка текста HTML-страницы -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML</title> <!-- Заголовок страницы, который отображается во вкладках браузера -->
+  <style>
+    body {
+      background: #FFFFFF;
+    }
+  </style>
 </head>
 
 <body> <!-- Хранит содержание страницы, отображаемое в окне браузера -->
@@ -108,11 +111,32 @@
   <br>x<sup>2</sup>
   <br>a<sub>1</sub>
 
-  <br><img src="/images/image.jpg" width="1350" height="659" alt="Описание изображения"> <!-- Если задать ширину и высоту изображения, то это поможет ускорить загрузу страницы (т.к. резервируется место для изображения) -->
-  <br><img src="/images/image.jpg" width="20%" height="20%" alt="Описание изображения">
+  <br><img src="images/image.jpg" width="1350" height="659" alt="Описание изображения"> <!-- Если задать ширину и высоту изображения, то это поможет ускорить загрузу страницы (т.к. резервируется место для изображения) -->
+  <br><img src="images/image.jpg" width="30%" height="30%" alt="Описание изображения"> <!-- Размеры изображения вычисляются относительно родительского элемента -->
+  <br><img src="https://ya.ru/images/image.jpg" width="30%" height="30 %" alt="Описание изображения">
 
-
-  Продолжить Stepik изображения
+  <!-- Таблица -->
+  <table border="10 px" bordercolor="blue" align="center">
+    <caption>Описание таблицы</caption>
+    <tr> <!-- Строка таблицы -->
+      <th>Заголовок 1</th> <!-- Заголовки таблицы -->
+      <th>Заголовок 2</th>
+      <th>Заголовок 3</th>
+    </tr>
+    <tr>
+      <td align="left" bgcolor="#ff0000">Ячейка 1</td> <!-- Данные таблицы (ячейки) -->
+      <td align="center" bgcolor="yellow">Ячейка 2</td>
+      <td align="right" bgcolor=rgb(0, 255, 0)>Ячейка 3</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ячейка 1</td> <!-- Атрибут "colspan" объединяет столбцы -->
+      <td rowspan="2">Ячейка 3</td> <!-- Атрибут "rowspan" объединяет строки -->
+    </tr>
+    <tr>
+      <td>Ячейка 1</td>
+      <td>Ячейка 2</td>
+    </tr>
+  </table>
 
 </body>
 
